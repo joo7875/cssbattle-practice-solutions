@@ -1,0 +1,39 @@
+<div class='grid'>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #62306D;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .grid {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    .grid > div {
+      width: 100px;
+      height: 100px;
+    }
+    .grid > div:nth-child(2n) {
+      background: #F7EC7D;
+    }
+    .grid > div:nth-child(2) {
+      border-top-left-radius: 50%;
+      border-top-right-radius: 50%;
+    }
+    .grid > div:nth-child(4), .grid > div:nth-child(6) {
+      border-bottom-left-radius: 50%;
+      border-bottom-right-radius: 50%;
+    }
+    
+  </style>
