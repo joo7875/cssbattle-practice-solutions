@@ -1,0 +1,64 @@
+<div id='a'></div>
+<div id='b'></div>
+<div id='c'></div>
+<div id='a-in'></div>
+<div id='b-in'></div>
+<div id='c-in'></div>
+<div id='tip-1'></div>
+<div id='tip-2'></div>
+<style>
+  body {
+    margin: 0;
+    background: #F5D6B4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div {
+    width: 100px;
+    height: 50px;
+    background: #D86F45;
+  }
+  #a, #c {
+    border-radius: 0 0 100px 100px;
+    position: absolute;
+    bottom: 100px;
+  }
+  #b {
+    border-radius: 100px 100px 0 0;
+    position: absolute;
+    top: 100px;
+  }
+  #a {
+    left: 70px;
+  }
+  #c {
+    right: 70px;
+  }
+  #a-in, #b-in, #c-in {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: #F5D6B4;
+    border-radius: 100%;
+  }
+  #a-in {
+    left: 90px;
+  }
+  #c-in {
+    right: 90px;
+  }
+  #tip-1, #tip-2 {
+    background: #D86F45;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border-radius: 100%;
+  }
+  #tip-1 {
+    left: 70px;
+  }
+  #tip-2 {
+    right: 70px;
+  }
+</style>

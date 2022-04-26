@@ -1,0 +1,65 @@
+<div id='a'></div>
+<div id='b'>
+  <div id='b_1'>
+  	<div id='b_2'></div>
+  </div>
+</div>
+<div id='c'></div>
+<div id='a-circle'></div>
+<div id='c-circle'></div>
+<style>
+  body {
+    margin: 0;
+    background: #191210;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div {
+    background: #ECA03D;
+    border-radius: 50%;
+  }
+  #a, #c {
+    width: 60px;
+    height: 60px;
+    background: #191210;
+    z-index: 1;
+  }
+  #b {
+    width: 140px;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #b_1 {
+    width: 100px;
+    height: 100px;
+    background: #191210;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #b_2 {
+    width: 50px;
+    height: 50px;
+    background: #84271C;
+  }
+  #a-circle, #c-circle {
+    background: white;
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    background: #ECA03D;
+  }
+  #a-circle {
+    left: 50px;
+    top: 150px;
+    border-radius: 0 0 50px 50px;
+  }
+  #c-circle {
+    right: 50px;
+    bottom: 150px;
+    border-radius: 50px 50px 0 0;
+  }
+</style>
