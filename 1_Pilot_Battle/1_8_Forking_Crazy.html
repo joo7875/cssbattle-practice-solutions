@@ -1,0 +1,59 @@
+<div class='rec'>
+    <div class='stick'>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class='circle'></div>
+  </div>
+  <div class='support'></div>
+  <style>
+    body {
+      margin: 0;
+      background: #6592CF;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .rec {
+      width: 140px;
+      height: 200px;
+    }
+    .circle {
+      background: #060F55;
+      width: 140px;
+      height: 100px;
+      border-radius: 0 0 70px 70px;
+      position: absolute;
+      bottom: 50px;
+    }
+    .stick {
+      display: flex;
+      flex-flow: row wrap;
+      position: absolute;
+      z-index: 1;
+    }
+    .stick > div {
+      width: 20px;
+      height: 110px;
+    }
+    .stick > div:nth-child(2n) {
+      background: #6592CF;
+      border-radius: 0 0 10px 10px;
+    } 
+    .stick > div:nth-child(2n+1) {
+      background: #060F55;
+      border-radius: 10px 10px 0 0;
+    }
+    .support {
+      position: absolute;
+      width: 20px;
+      height: 100px;
+      background: #060F55;
+      bottom: 0;
+    }
+  </style>
